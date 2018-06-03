@@ -18,8 +18,8 @@ public class RippleProgress extends View {
     public static final int BUBBLE_MIN_RADIUS_IN_DP = 4;
     public static final int ANIMATION_TIME = 800; // in milliseconds
     private static final int REPEAT_COUNT = 1800;
-    public static final String color = "#FF005393";
-    public static final String fadedColor = "#00065FA3";
+    public static final String color = "#1976D2";
+    public static final String fadedColor = "#001976D2";
     private Resources resources;
     private float mBubbleMaxRadiusInPx;
     private float mBubbleMinRadiusInPx;
@@ -81,7 +81,7 @@ public class RippleProgress extends View {
         });
 
         colorAnimator.setRepeatCount(REPEAT_COUNT);
-        colorAnimator.setRepeatMode(ValueAnimator.REVERSE);
+        colorAnimator.setRepeatMode(ValueAnimator.RESTART);
         colorAnimator.setDuration(ANIMATION_TIME);
         colorAnimator.setInterpolator(new DecelerateInterpolator());
         colorAnimator.start();
@@ -96,7 +96,7 @@ public class RippleProgress extends View {
                 invalidate();
             }
         });
-        radiusAnimator.setRepeatMode(ValueAnimator.REVERSE);
+        radiusAnimator.setRepeatMode(ValueAnimator.RESTART);
         radiusAnimator.setRepeatCount(REPEAT_COUNT);
         radiusAnimator.setDuration(ANIMATION_TIME);
         radiusAnimator.setInterpolator(new DecelerateInterpolator());

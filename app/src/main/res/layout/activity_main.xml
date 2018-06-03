@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="2"
+    android:weightSum="3"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:padding="16dp"
         android:layout_weight="1"
-        android:background="#FF005393"
+        android:background="#FF595E"
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
@@ -32,6 +32,48 @@
             android:layout_width="120dp"
             android:layout_height="16dp" />
 
+        <TextView
+            android:textColor="#ffffff"
+            android:text="Similar to Paytm"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#1C3144"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <TextView
+            android:padding="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="Earthworm Progress"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/earthworm_progress_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <xute.bubblingprogressbar.EarthwormProgress
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:padding="16dp"
+            android:textColor="#ffffff"
+            android:text="Similar to Windows Phone"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -43,7 +85,7 @@
         <TextView
             android:layout_centerHorizontal="true"
             android:text="Ripple Progress"
-            android:textColor="#FF005393"
+            android:textColor="#1976D2"
             android:textSize="18sp"
             android:textStyle="bold"
             android:id="@+id/ripple_progress_label"
@@ -57,9 +99,5 @@
             android:layout_height="64dp" />
 
     </RelativeLayout>
-
-
-
-
 
 </LinearLayout>

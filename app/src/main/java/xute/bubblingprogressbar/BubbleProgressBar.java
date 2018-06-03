@@ -71,11 +71,6 @@ public class BubbleProgressBar extends View {
         }
     }
 
-    private void setBubbleRadius(int circleIndex, double mBubbleRadiusInPx) {
-        radiuses[circleIndex] = mBubbleRadiusInPx;
-        invalidate();
-    }
-
     private void tryAnimation() {
         final ValueAnimator valueAnimator = ValueAnimator.ofInt(0, 360);
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
